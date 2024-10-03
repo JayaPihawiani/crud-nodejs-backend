@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/notes", noteRouter);
+app.get("/", (req, res) => res.send("Welcome to the Get-Contact API!"));
 app.use(errorHandle);
 app.listen(PORT, () => {
   console.log(`Connected to server ${PORT}`);
