@@ -4,7 +4,6 @@ const userRouter = require("./router/userRouter");
 const errorHandle = require("./middleware/errorHandler");
 const noteRouter = require("./router/noteRouter");
 const cors = require("cors");
-const cors = require("cors");
 const dotenv = require("dotenv").config();
 const app = express();
 
